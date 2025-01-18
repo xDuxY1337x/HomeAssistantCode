@@ -1,0 +1,143 @@
+type: entities
+entities:
+  - entity: sensor.***DEINSENSOR***
+    name: Badezimmer - Wandthermostat | Temperatur
+    secondary_info: last-changed
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Badezimmer - Thermostat | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Badezimmer - Luftsensor | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - type: divider
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Büro - Wandthermostat | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Büro - PC Angelina | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Büro - Thermostat | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
+  - entity: sensor.***DEINSENSOR***
+    secondary_info: last-changed
+    name: Büro - Luftsensor | Temperatur
+    card_mod:
+      style: |
+        :host {
+          --icon-color: 
+            {% if states('sensor.***DEINSENSOR***') | float >= 20 and states('sensor.***DEINSENSOR***') | float <= 22 %}
+              green
+            {% elif states('sensor.***DEINSENSOR***') | float >= 18 and states('sensor.***DEINSENSOR***') | float < 20 or states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 24 %}
+              yellow
+            {% elif states('sensor.***DEINSENSOR***') | float > 22 and states('sensor.***DEINSENSOR***') | float <= 27 %}
+              orange
+            {% elif states('sensor.***DEINSENSOR***') | float > 27 %}
+              red
+            {% else %}
+              blue
+            {% endif %};
+          --paper-item-icon-color: var(--icon-color);
+        }
